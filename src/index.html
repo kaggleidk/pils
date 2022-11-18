@@ -10,63 +10,79 @@
 <body>
      <!-- Navbar -->
 <div>
-  <nav class="relative container mx-auto p-6">
+  <nav class="container mx-auto ">
     <!-- Flex container-->
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between bg-blue-800 text-white px-3 py-4">
       <!-- Logo-->
       <div class="pt-2">
         <img src="img/logo.svg" alt="">
       </div>
       <!-- Menu Items -->
       <div class="space-x-12">
-        <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Cancer Types</a>
+        <a href="#" class="hover:text-darkGrayishBlue">Drugs</a>
         <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+        
 </div>
 </div>
   </nav>
   </div>
     <!--Title-->
-    <div class="text-center">
-        <h1 class="text-4xl">Recreational Drugs</h1>
+    <div class="text-center pb-3">
+        <h1 class="text-4xl font-bold">Anti-Cancer Drugs Information Platform</h1>
         <!--Disclaimer-->
-        <p class="text-2xl text-red-700">DON'T RISK USING, GET SMART</p>
+        <p class="text-xl font-semi-bold italic">Effectiveness&Protein Interactions</p>
     </div>
   
     <!-- Quick picks Grid-->
+    <div class="container justify-center mx-auto p-10">
     <div class="place-content-evenly">
-        <div class="grid grid-rows-5 grid-flow-col gap-4 justify-center">
-            <div class="row-span-3 ...">01</div>
-            <div class="col-span-2 ...">02</div>
-            <div class="row-span-1 col-span-3">
-                 <!--Search Bar-->
+        <div class="grid grid-cols-6 gap-0 justify-center font-bold text-white ">
+            <div class="col-start-2 col-span-4 bg-blue-600 border-2 ...">Lung Cancer</div>
+            <div class="col-start-1 col-end-3 bg-gray-600 border-2  ...">Anti-Cancer Drug</div>
+            <div class="col-start-3 col-end-5 bg-gray-500 border-2 border-gray-800 ..."></div>
+            <div class="col-end-7 col-span-2 bg-green-600 border-2 ...">Breast Cancer</div>
+            <div class="col-start-1 col-span-5 bg-orange-600 border-2 ...">Colon Cancer</div>
+            <div class="col-start-3 col-end-5 ...">
+                              <!--Search Bar-->
     <form id="form">
         <input type="search" id="query" name="q" placeholder="Search...">
-        <button class="border-gray-500">Search</button>
+        <button class="rounded bg-gray-500 border-2 border-black-800 text-white italic w-1/5 ml-40">Search</button>
     </form>
             </div>
-            <div class="row-span-2 col-span-2 ...">03</div>
+            <div class="col-start-3 col-end-7 bg-blue-500 border-2 ...">Anti-Cancer</div>
+            <div class="col-start-1 col-end-3 bg-gray-600 border-2  ...">Protein</div>
+            <div class="col-start-3 col-end-5 bg-gray-500 border-2 border-gray-800 ..."></div>
+            <div class="col-end-7 col-span-2 bg-green-600 border-2 ...">Effectveness</div>
+            <div class="col-start-1 col-span-4 bg-orange-600 border 2 ...">Prostate Cancer</div>
+
+            
+
         </div>
-    </div>
-    <div class="quick-pick grid grid-cols-3 gap-3">
-        <div class="grid-item">
-            <p>Quick hits</p>
+
+
+            </div>
         </div>
-        <div class="grid-item">
-          <a href="#" class="">Cannabis</a>
-        </div>
-        <div class="grid-item">
-            <a href="#" class="">Cocaine</a>
-        </div>
-        <div class="grid-item">
-            <a href="#" class="">MDMA</a>
-        </div>
-        <div class="grid-item">
-            <a href="#" class="">Opioids</a>
-        </div>
-    </div>
+   
+
+
     <script src="js/script.js"></script>
+
+
+
+        <!-- Footer -->
+        <footer class="bg-blue-800">
+            <!-- Flex Container -->
+            <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+           
+            
+              <div class="mx-auto my-6 text-justify-between text-white">
+                Copyright &copy; 2022, All Rights Reserved
+              </div>
+           
+    
+             </div>
+        </footer>
 </body>
 </html>
