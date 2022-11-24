@@ -19,12 +19,13 @@ class SPARQLQueryDispatcher {
 
 const endpointUrl = 'https://query.wikidata.org/sparql';
 const sparqlQuery = `SELECT ?drug ?drugLabel 
+(GROUP_CONCAT(DISTINCT ?molecularStructurePic;separator=", ") as ?molecularStructure)
 (GROUP_CONCAT(DISTINCT ?ChemblKeyLabel;separator=", ")      as ?ChembleID)
 (GROUP_CONCAT(DISTINCT ?ActiveInLabel;separator=", ")       as ?ActiveInLabelGroup)
 (GROUP_CONCAT(DISTINCT ?cancerTreatedLabel;separator=", ")  as ?cancerTreatedLabelGroup)
 {
    ?drug ?instance wd:Q12078.             #cancer drugs
-   ?drug wdt:P117 ?ChemicalStructure.     #with chemical structure
+   ?drug wdt:P117 ?molecularStructurePic.     #with chemical structure
    ?drug wdt:P592 ?ChemblKeyLabel.        #with chemble ID
    ?drug wdt:P3780 ?ActiveIn.             #is an active compound in a drug
    ?drug wdt:P2175 ?cancerTreated.        #what conditions are treated
